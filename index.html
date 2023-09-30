@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MathPad: Open source online math editor. Easily solve, edit, and share your math problems with MathPad.">
+    <meta name="keywords" content="MathPad, Math Editor, Math Notebook, Mathematics Tool, Algebra, Geometry">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <title>MathPad - Editor</title>
+</head>
+<body>
+<div id="header">
+    <div id="actions">
+        <button id="undo" title="Undo"><i class="fas fa-undo"></i></button>
+        <button id="redo" title="Redo"><i class="fas fa-redo"></i></button>
+        <button id="print" title="Print"><i class="fas fa-print"></i></button>
+        <button id="save" title="Save"><i class="fas fa-save"></i></button>
+        <button id="clear" title="Clear"><i class="fas fa-trash"></i></button>
+        <a href="docs.html"><button id="docs" title="Help"><i class="fas fa-question"></i></button></a>
+    </div>
+    <span id="title">MathPad</span>
+    <div id="settings">
+        <button id="gear" title="Settings"><i class="fas fa-cog"></i></button>
+    </div>
+</div>
+
+
+    <div class="container">
+        <div class="editor" contenteditable="true" id="editor"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/saveState.js"></script>
+</body>
+<footer>
+    <p>&copy Kieran Carter 2023</p>
+</footer>
+</html>
