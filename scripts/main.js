@@ -63,4 +63,3 @@ function insertAtCursor(node) {
     range.setStart(node, 0);
     selection.addRange(range);
 }
-

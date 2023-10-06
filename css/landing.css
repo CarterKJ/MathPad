@@ -43,6 +43,88 @@
 	border: none !important;
 }
 
+
+#sidebarMenu {
+    position: fixed;
+    top: 0;
+    right: -290px;
+    width: 250px;
+    height: 100%;
+    background-color: #2c2c2c;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    border-left: 1px solid #444;
+}
+
+#sidebarMenu h3 {
+    color: #e8e8e8;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#sidebarMenu ul {
+    list-style-type: none;
+    padding: 0;
+    border-bottom: 1px solid #444;
+    margin-bottom: 20px;
+}
+
+#sidebarMenu li {
+    margin-bottom: 15px;
+    color: #e8e8e8;
+    cursor: pointer;
+    border-bottom: 1px dashed #444;
+    padding-bottom: 10px;
+}
+
+#sidebarMenu li:last-child {
+    border-bottom: none;
+}
+
+#sidebarMenu li button {
+    background-color: #555;
+    color: #e8e8e8;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#sidebarMenu li button:hover {
+    background-color: #777;
+}
+
+#notebookName {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: #e8e8e8;
+}
+
+#createNotebook {
+    width: 100%;
+    padding: 10px;
+    background-color: #555;
+    color: #e8e8e8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#createNotebook:hover {
+    background-color: #777;
+}
+
+
+
+
  @media print {
     #header, footer {
         display: none;

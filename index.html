@@ -31,14 +31,26 @@
 </div>
 
 
-    <div class="container">
-        <div class="editor" contenteditable="true" id="editor"></div>
+<div class="container">
+    <div class="editor" contenteditable="true" id="editor"></div>
+</div>
+
+<div id="sidebarMenu">
+    <div id="menuControls">
+        <input type="text" id="notebookName" placeholder="Notebook Name">
+        <button id="createNotebook">Create</button>
     </div>
+    <ul id="notebookList">
+        <!-- List of notebooks will be populated here -->
+    </ul>
+</div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathquill/0.10.1/mathquill.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="scripts/main.js"></script>
     <script src="scripts/header.js"></script>
-    <script src="scripts/saveState.js"></script>
+    <script src="scripts/saveMenu.js"></script>
 </body>
 <footer>
     <p>&copy Kieran Carter 2023</p>

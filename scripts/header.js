@@ -9,6 +9,7 @@ document.getElementById('print').addEventListener('click', printContent);
 document.getElementById('save').addEventListener('click', saveContent);
 document.getElementById('clear').addEventListener('click', clearContent);
 
+
 editor.addEventListener('input', function() {
     if (historyIndex < history.length - 1) {
         history = history.slice(0, historyIndex + 1);
@@ -65,3 +66,4 @@ function clearContent() {
     history = [""];
     historyIndex = 0;
 }
+
